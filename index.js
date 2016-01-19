@@ -21,7 +21,8 @@ lib.preFlow(function(err, results) {
     .option('-F, --force', 'Used by `publish` - bypasses schema testing.')
     .option('-f, --format <file type extension>', 'Used by `export`.')
     .option('-p, --port <port>', 'Used by `serve` (default: 4000)', 4000)
-    .option('-s, --silent', 'Used by `serve` to tell it if open browser auto or not.', false);
+    .option('-s, --silent', 'Used by `serve` to tell it if open browser auto or not.', false)
+    .option('-l, --local', 'Use a local theme')
 
   program
     .command('init')
